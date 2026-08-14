@@ -1,0 +1,30 @@
+{
+  "name": "electron-learn",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "nodemon --ext html,css,js --exec electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "build": {
+    "appId": "com.guna",
+    "productName": "Screen capturer",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^43.4.0",
+    "electron-builder": "^26.15.3",
+    "nodemon": "^3.1.14"
+  }
+}
